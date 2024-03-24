@@ -1,0 +1,12 @@
+rental_management_system/
+│
+├── Pipfile
+├── Pipfile.lock
+├── rental_management_system/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── cli.py
+│   ├── database.py
+│   └── tests/
+│       └── test_models.py
+└── run.py

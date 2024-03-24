@@ -1,0 +1,43 @@
+		Location: Represents a property location (e.g., New Jersey, California).
+     Attributes: ID, name
+     Relationships: One-to-many with Property
+
+ 		Property: Represents a rental property.
+     Attributes: ID, name, location_id (foreign key), units, occupied_units
+     Relationships: One-to-many with Tenant
+
+ 		Tenant: Represents a tenant renting a property.
+     Attributes: ID, name, phone_number, email_address, house_number, date_of_rent_payment, amount_of_rent_to_be_paid, property_id (foreign key)
+     Relationships: Many-to-one with Property
+
+With these classes in mind, we can design the CLI application to interact with the user and perform the required operations. Here's a basic structure for the CLI:
+ 		Menus:
+     Main Menu
+     Location Menu
+     Property Menu
+     Tenant Menu
+
+ 		Operations:
+     Add a new location
+     Add a new property
+     Show property details
+     Add a new tenant
+     Remove a tenant
+     Show tenant details
+     Show property location
+     Show the number of units per location
+     Show the number of houses occupied and vacant per property
+     Show tenants renting more than one unit
+     Guide on using strings or integers
+     Store data in the database
+
+ 		User Interaction:
+     Use input() to get user input for operations
+     Validate user input and provide informative errors
+
+ 		Database Operations:
+     Use SQLAlchemy to create and interact with the database
+     Implement CRUD operations for locations, properties, and tenants
+
+ 		Testing:
+     Write tests to demonstrate the functionality of the code
